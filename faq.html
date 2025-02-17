@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Condiment&family=Satisfy&display=swap" rel="stylesheet">
+    <title>Glow On Call</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">GLOW ON CALL</a>
+        <div class="nav-links">
+            <div class="services-dropdown-menu">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: transparent; border: none; color: #fff; font-size: 16px;">
+                    Services
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item dropdown-service" href="hair.html">Hair</a>
+                    <a class="dropdown-item dropdown-service" href="makeup.html">Makeup</a>
+                    <a class="dropdown-item dropdown-service" href="nails.html">Nails</a>
+                    <a class="dropdown-item dropdown-service" href="spraytan.html">Spray Tan</a>
+                </div>
+            </div>
+            
+            <a href="booking.html" class="nav-link">Book Now</a>
+            <a href="artists.html" class="nav-link">Artists</a>
+            <a href="about-us.html" class="nav-link">About Us</a>
+        </div>
+    </nav>
+
+    <!-- FAQ Section -->
+<section class="faq-section">
+    <h2>FAQ</h2>
+    <div class="faq-container">
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>What services do you offer?</span>
+                <span class="arrow">&#9660;</span> 
+            </div>
+            <div class="faq-answer">
+                <p>We offer professional services from anywhere you would like.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>How do I book an appointment?</span>
+                <span class="arrow">&#9660;</span>
+            </div>
+            <div class="faq-answer">
+                <p>You can book via the booking page in this.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>What areas do you service?</span>
+                <span class="arrow">&#9660;</span> 
+            </div>
+            <div class="faq-answer">
+                <p>We currently serve Ottawa and nearby areas. Contact us to confirm availability.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>What payment methods do you accept?</span>
+                <span class="arrow">&#9660;</span> 
+            </div>
+            <div class="faq-answer">
+                <p>We accept cash, e-transfer, and select digital payment methods.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Do you offer group bookings?</span>
+                <span class="arrow">&#9660;</span>
+            </div>
+            <div class="faq-answer">
+                <p>Yes! We offer group bookings for parties and special events. Contact us for details.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>Headquarter Office:</h4>
+            <p>123 Rideau Street<br>Ottawa, ON, Canada<br>+1 123 4567891</p>
+        </div>
+        <div class="footer-links">
+            <a href="faq.html">FAQ</a>
+            <a href="terms.html">Terms & Conditions</a>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2025 Copyright by Glow on Call, All rights reserved</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const faqItems = document.querySelectorAll(".faq-item");
+    
+            faqItems.forEach((item) => {
+                const question = item.querySelector(".faq-question");
+    
+                question.addEventListener("click", () => {
+                    item.classList.toggle("active");
+    
+                    faqItems.forEach((otherItem) => {
+                        if (otherItem !== item && otherItem.classList.contains("active")) {
+                            otherItem.classList.remove("active");
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

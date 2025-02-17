@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Condiment&family=Satisfy&display=swap" rel="stylesheet">
+    <title>Glow On Call</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">GLOW ON CALL</a>
+        <div class="nav-links">
+            <div class="services-dropdown-menu">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: transparent; border: none; color: #fff; font-size: 16px;">
+                    Services
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item dropdown-service" href="hair.html">Hair</a>
+                    <a class="dropdown-item dropdown-service" href="makeup.html">Makeup</a>
+                    <a class="dropdown-item dropdown-service" href="nails.html">Nails</a>
+                    <a class="dropdown-item dropdown-service" href="spraytan.html">Spray Tan</a>
+                </div>
+            </div>
+            
+            <a href="booking.html" class="nav-link">Book Now</a>
+            <a href="artists.html" class="nav-link">Artists</a>
+            <a href="about-us.html" class="nav-link">About Us</a>
+        </div>
+    </nav>
+    <!-- Booking Section -->
+<section class="booking-section">
+    <h2>CALL YOUR TEAM</h2>
+    <p>Please complete the form below and click "Book" to receive a booking confirmation via email.</p>
+
+    <form class="booking-form">
+        <div class="form-group">
+            <label for="name">First and Last Name</label>
+            <input type="text" id="location" name="location" placeholder="Enter your First and Last Name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="location">Location</label>
+            <input type="text" id="location" name="location" placeholder="Enter your location" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        </div>
+
+        <div class="form-group">
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+
+        <!-- Service Selection -->
+        <div class="service-group">
+            <div class="form-group">
+                <label for="service">Service</label>
+                <select id="service" name="service" required>
+                    <option value="" disabled selected>Select a service</option>
+                    <optgroup label="Hair">
+                        <option value="hair-cut-styling">Haircut and Styling</option>
+                        <option value="hair-coloring">Hair Coloring</option>
+                        <option value="hair-extensions">Hair Extensions and Weaves</option>
+                        <option value="special-occasion-styling">Special Occasion Styling</option>
+                        <option value="hair-treatment">Hair Treatment</option>
+                        <option value="perming-curling">Perming and Curling</option>
+                    </optgroup>
+                    <optgroup label="Makeup">
+                        <option value="natural-makeup">Natural Makeup</option>
+                        <option value="glam-makeup">Glam Makeup</option>
+                        <option value="bridal-makeup">Bridal Makeup</option>
+                        <option value="editorial-makeup">Editorial Makeup</option>
+                    </optgroup>
+                    <optgroup label="Nails">
+                        <option value="manicure">Manicure</option>
+                        <option value="pedicure">Pedicure</option>
+                        <option value="gel-nails">Gel Nails</option>
+                        <option value="acrylic-nails">Acrylic Nails</option>
+                        <option value="special-occasion-nails">Special Occasion Nails</option>
+                    </optgroup>
+                    <optgroup label="Spray Tan">
+                        <option value="classic-spray-tan">Classic Spray Tan</option>
+                        <option value="custom-spray-tan">Custom Spray Tan</option>
+                        <option value="rapid-spray-tan">Rapid Spray Tan</option>
+                    </optgroup>
+                </select>
+                
+            </div>
+
+            <!-- Artist Dropdown -->
+            <div class="form-group artist-group" style="display: none;">
+                <label for="artist">Artist</label>
+                <select id="artist" name="artist" required>
+                    <option value="" disabled selected>Select an artist</option>
+                </select>
+            </div>
+
+            <!-- Time Input -->
+            <div class="form-group time-group" style="display: none;">
+                <label for="time">Time</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+        </div>
+
+        <button type="button" class="add-service-btn">Add Another Service</button>
+
+        <div id="error-message" class="error-message" style="display: none; color: red; margin-top: 10px;">
+            Please fill out all required fields.
+        </div>
+
+        <a href="booking-confirmation.html" class="book-now-btn">BOOK</a>
+
+    </form>
+</section>
+
+      <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>Headquarter Office:</h4>
+            <p>123 Rideau Street<br>Ottawa, ON, Canada<br>+1 123 4567891</p>
+        </div>
+        <div class="footer-links">
+            <a href="faq.html">FAQ</a>
+            <a href="terms.html">Terms & Conditions</a>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2025 Copyright by Glow on Call, All rights reserved</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
