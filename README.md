@@ -1,5 +1,7 @@
 An elegant, responsive website to book at-home beauty services including hair, makeup, nails, and spray tans.
-Website Overview
+
+
+**Website Overview**
 
 Glow On Call brings the salon to your home. Users can:
 
